@@ -5,7 +5,7 @@
 This quiz app is a web application designed to provide users with a fun and interactive learning experience by testing their knowledge through a set of questions. It is provided in the form of timed quizzes on each question and real-time assessment of user answers and correct answers. And give user feedback in the final score. 
 <a href="https://xiachen97.github.io/XiaChen_hw5TH_csi3150_fs2023/">Click here to quiz!<a/>
 
-## Functional features
+## Functional Features
 
 - Users can click “start quiz”.
 - Users need to read some rules to determine start quiz or exit.
