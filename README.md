@@ -57,7 +57,7 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 
 1. The head section contains the document's meta-information, styles, and scripts to ensure that the web page displays correctly and has the required interactivity.
 
-CODE:
+**CODE:**
 
 * link rel="stylesheet" : references an external CSS style sheet, which determines the appearance and style of the web page.
 
@@ -133,7 +133,7 @@ CODE:
 ```
 2. The body of this HTML code block contains the key elements of the quiz application page.
 
-CODE:
+**CODE:**
 
 * class is "start_btn": A button element that users can click to start or start answering a question.
 * class is "info_box": A wrapper containing the rules for answering questions, including a title, a list of rules, and buttons(quit and start).
@@ -168,7 +168,7 @@ body {
 
 2. Define global styles such as text font, page background color, and color when user selects text.
 
-CODE:
+**CODE:**
 
 * \*{...} : Reset the margins and padding of all HTML elements to ensure there is no default spacing.
 
@@ -189,7 +189,7 @@ CODE:
 
 3. CSS style code controls the appearance and interactive behavior of elements with class names "activeInfo", "activeQuiz" and "activeResult" when JavaScript is triggered. 
 
-CODE:
+**CODE:**
 
 * Opacity : 1 means the element is completely opaque. 
 * z-index : a css property used to control the stacking order of elements on a web page. 
@@ -222,7 +222,7 @@ const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 ```
 
-1. Get HTML elements by querying a specific CSS selector in the document
+1. Get HTML elements by querying a specific CSS selector in the document.
 
 ```
 // if startQuiz button clicked
@@ -276,7 +276,7 @@ next_btn.addEventListener("click", (e) => {
 
 3. This code is used to load the next question when the user clicks the "Next Question" button and also checks if all questions have been answered. If so, clears the counter and counterline to call showResult() function to display the final quiz results.
 
-CODE:
+**CODE:**
 
 * if (que_count < questions.length - 1){...} : Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
 
@@ -367,7 +367,7 @@ function startTimer(time) {
 
 5. It is used to start a timer, countdown counter to control remaining time in quiz application.
 
-CODE:
+**CODE:**
 
 * function startTimer(time){...} : It accepts a parameter time, which represents the initial countdown time.
 * counter = setInterval(timer, 1000); : This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
