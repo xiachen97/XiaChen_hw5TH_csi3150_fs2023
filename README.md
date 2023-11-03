@@ -33,7 +33,7 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 ├─README.md
 ├─index.html
 ```
-## Code explanations
+## Code Explanations
 
 > 
 > ### index.html
