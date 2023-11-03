@@ -163,7 +163,7 @@ body {
 }
 ```
 
-2.  
+2. Define global styles such as text font, page background color, and color when user selects text.
 CODE:
 * \*{...}: Reset the margins and padding of all HTML elements to ensure there is no default spacing.
 
