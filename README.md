@@ -278,7 +278,7 @@ next_btn.addEventListener("click", (e) => {
 
 CODE:
 
-* if (que_count < questions.length - 1) : Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
+* if (que_count < questions.length - 1){...} : Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
 
 * que_count++; : Increment the question counter to point to the next question.
 
@@ -369,14 +369,11 @@ function startTimer(time) {
 
 CODE:
 
-* function startTimer(time) : It accepts a parameter time, which represents the initial countdown time.
-
+* function startTimer(time){...} : It accepts a parameter time, which represents the initial countdown time.
 * counter = setInterval(timer, 1000); : This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
-
-* function timer() : This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
-
+* function timer(){...} : This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
 * let addZero = timeCount.textContent; : If the time is less than 9, it will get the current time text.
-timeCount.textContent = "0" + addZero; : Then add a "0" before the time to ensure that the displayed time format is two digits.
+* timeCount.textContent = "0" + addZero; : Then add a "0" before the time to ensure that the displayed time format is two digits.
 
 ```
 // Shows a progress bar mirroring timer value left
