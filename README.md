@@ -198,7 +198,7 @@ body {
 
 4. All unannotated CSS code basically defines the style and appearance of the web page.
 
-### <span style="color: blue;">questions.js</span>
+### <font color="blue">questions.js</font>
 
 This text contains a JavaScript array, where each element is an object consists of the following members: question number, questions, options, and answers. 
 The main function of this array is to store the questions and answer options of the quiz game or test for display and interaction on the web page.
