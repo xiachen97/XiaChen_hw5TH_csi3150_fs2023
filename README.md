@@ -2,7 +2,8 @@
 
 ## Lesson Outcomes
 
-This quiz app is a web application designed to provide users with a fun and interactive learning experience by testing their knowledge through a set of questions. It is provided in the form of timed quizzes on each question and real-time assessment of user answers and correct answers. And give user feedback in the final score.
+This quiz app is a web application designed to provide users with a fun and interactive learning experience by testing their knowledge through a set of questions. It is provided in the form of timed quizzes on each question and real-time assessment of user answers and correct answers. And give user feedback in the final score. 
+<a href="https://xiachen97.github.io/XiaChen_hw5TH_csi3150_fs2023/">Click here to quiz!<a/>
 
 ## Functional features
 
@@ -198,7 +199,7 @@ body {
 
 4. All unannotated CSS code basically defines the style and appearance of the web page.
 
-### <font color="blue">questions.js</font>
+### <span style="color: blue;">questions.js</span>
 
 This text contains a JavaScript array, where each element is an object consists of the following members: question number, questions, options, and answers. 
 The main function of this array is to store the questions and answer options of the quiz game or test for display and interaction on the web page.
