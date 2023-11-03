@@ -18,7 +18,7 @@ This quiz app is a web application designed to provide users with a fun and inte
 ## Technology Stack
 
 - HTML
-- css
+- CSS
 - JavaScript
 
 ## Project Directory Structure
@@ -57,9 +57,10 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 </head>
 ```
 
-<link rel="stylesheet" href="css/style.css">references an external CSS style sheet, which determines the appearance and style of the web page.
-<script src="https://kit.fontawesome.com/4a4f4b55b0.js" crossorigin="anonymous"></script> Icons can be used in pages by referencing Font Awesome's icon library.
-<script src="js/questions.js" defer></script> and <script src="js/quizApp.js" defer></script> are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data and the second contain the main logic and interactive behavior of Quiz App.
+link rel="stylesheet": references an external CSS style sheet, which determines the appearance and style of the web page.
+script src="https://kit.fontawesome.com/4a4f4b55b0.js": Icons can be used in pages by referencing Font Awesome's icon library.
+script src="js/questions.js" defer and script src="js/quizApp.js" defer are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data, the second contain the main logic and interactive behavior of Quiz App.
+
 
 ```
 <body>
