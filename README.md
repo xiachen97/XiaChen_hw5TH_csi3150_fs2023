@@ -61,7 +61,7 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 
 * script src is fontawesome.com: Icons can be used in pages by referencing Font Awesome's icon library.
 
-* script src="js/questions.js" defer and script src="js/quizApp.js" defer are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data, the second contain the main logic and interactive behavior of Quiz App.
+* script src is js/questions.js defer and js/quizApp.js defer are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data, the second contain the main logic and interactive behavior of Quiz App.
 
 
 ```
