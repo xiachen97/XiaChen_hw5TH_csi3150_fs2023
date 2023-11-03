@@ -22,7 +22,7 @@ This quiz app is a web application designed to provide users with a fun and inte
 - JavaScript
 
 ## Project Directory Structure
-
+```
 C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 ├─js
 | ├─questions.js
@@ -31,7 +31,7 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 | └style.css
 ├─README.md
 ├─index.html
-
+```
 ## Code explanations
 
 ### <span style="color: blue;">index.html</span>
