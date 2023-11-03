@@ -132,6 +132,9 @@ CODE:
 </body>
 ```
 2. The body of this HTML code block contains the key elements of the quiz application page.
+
+CODE:
+
 * class is "start_btn": A button element that users can click to start or start answering a question.
 * class is "info_box": A wrapper containing the rules for answering questions, including a title, a list of rules, and buttons(quit and start).
 * class is "quiz_box": The main answering area, including title, timer, question text, answer options, dynamic statistics questions and next question button.
@@ -164,7 +167,9 @@ body {
 ```
 
 2. Define global styles such as text font, page background color, and color when user selects text.
+
 CODE:
+
 * \*{...}: Reset the margins and padding of all HTML elements to ensure there is no default spacing.
 
 * Body{...}: Set the background color of the page to purple.
@@ -182,7 +187,14 @@ CODE:
 }
 ```
 
-3. CSS style code controls the appearance and interactive behavior of elements with class names "activeInfo", "activeQuiz" and "activeResult" when JavaScript is triggered. Opacity: 1 means the element is completely opaque. z-index is a css property used to control the stacking order of elements on a web page. pointer-events: auto; means the element can respond to mouse events, such as clicks or hovers. scale(1) means that the size of the element is not scaled.
+3. CSS style code controls the appearance and interactive behavior of elements with class names "activeInfo", "activeQuiz" and "activeResult" when JavaScript is triggered. 
+
+CODE:
+
+* Opacity: 1 means the element is completely opaque. 
+* z-index is a css property used to control the stacking order of elements on a web page. 
+* pointer-events: auto; means the element can respond to mouse events, such as clicks or hovers. 
+* scale(1) means that the size of the element is not scaled.
 
 4. All unannotated CSS code basically defines the style and appearance of the web page.
 
@@ -234,7 +246,11 @@ continue_btn.addEventListener("click", (e) => {
 
 ```
 
-2. When "start_btn", "exit_btn", "continue_btn" is clicked, trigger CSS rules to change the visibility of the element. showQuetions(0), queCounter(1), startTimer(15), startTimerLine(0) are the four functions be called in this file. The purpose of these code snippets is to initialize and start various aspects of the quiz game, including displaying questions, counters, timers, and timelines.
+2. When "start_btn", "exit_btn", "continue_btn" is clicked, trigger CSS rules to change the visibility of the element. 
+
+showQuetions(0), queCounter(1), startTimer(15), startTimerLine(0) are the four functions be called in this file. 
+
+The purpose of these code snippets is to initialize and start various aspects of the quiz game, including displaying questions, counters, timers, and timelines.
 
 ```
 // if Next Question button is clicked
@@ -351,6 +367,8 @@ function startTimer(time) {
 ```
 
 5. It is used to start a timer, countdown counter to control remaining time in quiz application.
+
+CODE:
 
 * function startTimer(time) - It accepts a parameter time, which represents the initial countdown time.
 
