@@ -59,9 +59,9 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 
 CODE:
 
-* link rel="stylesheet": references an external CSS style sheet, which determines the appearance and style of the web page.
+* link rel="stylesheet" : references an external CSS style sheet, which determines the appearance and style of the web page.
 
-* script src is fontawesome.com: Icons can be used in pages by referencing Font Awesome's icon library.
+* script src is fontawesome.com : Icons can be used in pages by referencing Font Awesome's icon library.
 
 * script src is js/questions.js defer and js/quizApp.js defer are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data, the second contain the main logic and interactive behavior of Quiz App.
 
@@ -170,11 +170,11 @@ body {
 
 CODE:
 
-* \*{...}: Reset the margins and padding of all HTML elements to ensure there is no default spacing.
+* \*{...} : Reset the margins and padding of all HTML elements to ensure there is no default spacing.
 
-* Body{...}: Set the background color of the page to purple.
+* Body{...} : Set the background color of the page to purple.
 
-* ::selection{...}： This is a pseudo-element selector that allows customizing the color and background color when the user selects text.
+* ::selection{...} : This is a pseudo-element selector that allows customizing the color and background color when the user selects text.
 
 ```
 .info_box.activeInfo,
@@ -191,16 +191,17 @@ CODE:
 
 CODE:
 
-* Opacity: 1 means the element is completely opaque. 
-* z-index is a css property used to control the stacking order of elements on a web page. 
-* pointer-events: auto; means the element can respond to mouse events, such as clicks or hovers. 
-* scale(1) means that the size of the element is not scaled.
+* Opacity : 1 means the element is completely opaque. 
+* z-index : a css property used to control the stacking order of elements on a web page. 
+* pointer-events: auto; : means the element can respond to mouse events, such as clicks or hovers. 
+* scale(1) : means that the size of the element is not scaled.
 
 4. All unannotated CSS code basically defines the style and appearance of the web page.
 
 ### <span style="color: blue;">questions.js</span>
 
-This text contains a JavaScript array, where each element is an object consists of the following members: question number, questions, options, and answers. The main function of this array is to store the questions and answer options of the quiz game or test for display and interaction on the web page.
+This text contains a JavaScript array, where each element is an object consists of the following members: question number, questions, options, and answers. 
+The main function of this array is to store the questions and answer options of the quiz game or test for display and interaction on the web page.
 
 ### <span style="color: blue;">quizApp.js</span>
 
@@ -247,9 +248,7 @@ continue_btn.addEventListener("click", (e) => {
 ```
 
 2. When "start_btn", "exit_btn", "continue_btn" is clicked, trigger CSS rules to change the visibility of the element. 
-
 showQuetions(0), queCounter(1), startTimer(15), startTimerLine(0) are the four functions be called in this file. 
-
 The purpose of these code snippets is to initialize and start various aspects of the quiz game, including displaying questions, counters, timers, and timelines.
 
 ```
@@ -279,19 +278,19 @@ next_btn.addEventListener("click", (e) => {
 
 CODE:
 
-* if (que_count < questions.length - 1) - Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
+* if (que_count < questions.length - 1) : Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
 
-* que_count++; - Increment the question counter to point to the next question.
+* que_count++; : Increment the question counter to point to the next question.
 
-* que_numb++; - Increment the question number value to represent the next question number.
+* que_numb++; : Increment the question number value to represent the next question number.
 
-* showQuetions(que_count); - Call the "showQuetions" function to show the next question (pass the "que_count" parameter here)
+* showQuetions(que_count); : Call the "showQuetions" function to show the next question (pass the "que_count" parameter here)
 
-* startTimer(timeValue); - Call the "startTimer" function to start timing a new question and set the time to the initial value.
+* startTimer(timeValue); : Call the "startTimer" function to start timing a new question and set the time to the initial value.
 
-* startTimerLine(widthValue); - Call the "startTimerLine" function to restart the timeline or progress bar and set the width to the initial value.
+* startTimerLine(widthValue); : Call the "startTimerLine" function to restart the timeline or progress bar and set the width to the initial value.
 
-* timeText.textContent = "Time Left"; - Change the content of the time text to "Time Left" to prompt the user for the remaining time.
+* timeText.textContent = "Time Left"; : Change the content of the time text to "Time Left" to prompt the user for the remaining time.
 
 ```
 function optionSelected(answer) {
@@ -370,14 +369,14 @@ function startTimer(time) {
 
 CODE:
 
-* function startTimer(time) - It accepts a parameter time, which represents the initial countdown time.
+* function startTimer(time) : It accepts a parameter time, which represents the initial countdown time.
 
-* counter = setInterval(timer, 1000); - This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
+* counter = setInterval(timer, 1000); : This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
 
-* function timer() - This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
+* function timer() : This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
 
-* let addZero = timeCount.textContent; - If the time is less than 9, it will get the current time text.
-timeCount.textContent = "0" + addZero; - Then add a "0" before the time to ensure that the displayed time format is two digits.
+* let addZero = timeCount.textContent; : If the time is less than 9, it will get the current time text.
+timeCount.textContent = "0" + addZero; : Then add a "0" before the time to ensure that the displayed time format is two digits.
 
 ```
 // Shows a progress bar mirroring timer value left
