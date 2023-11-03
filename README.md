@@ -35,7 +35,9 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 ```
 ## Code explanations
 
+> 
 > ### <span style="color: blue;">index.html</span>
+> 
 
 ```
 <head>
@@ -141,7 +143,9 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 * class is "quiz_box": The main answering area, including title, timer, question text, answer options, dynamic statistics questions and next question button.
 * class is"result_box": Result display area, including crown icon, completion text, user score text and restart/exit button.
 
+> 
 > ### <span style="color: blue;">style.css</span>
+> 
 
 ```
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -199,12 +203,16 @@ body {
 
 4. All unannotated CSS code basically defines the style and appearance of the web page.
 
+> 
 > ### <span style="color: blue;">questions.js</span>
+> 
 
 This text contains a JavaScript array, where each element is an object consists of the following members: question number, questions, options, and answers. 
 The main function of this array is to store the questions and answer options of the quiz game or test for display and interaction on the web page.
 
+> 
 > ### <span style="color: blue;">quizApp.js</span>
+> 
 
 ```
 const start_btn = document.querySelector(".start_btn button");
