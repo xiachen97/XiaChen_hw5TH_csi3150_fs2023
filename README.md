@@ -36,8 +36,6 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 
 ### <span style="color: blue;">index.html</span>
 
-1. The head section contains the document's meta-information, styles, and scripts to ensure that the web page displays correctly and has the required interactivity.
-
 ```
 <head>
     <meta charset="UTF-8">
@@ -57,12 +55,15 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 </head>
 ```
 
+1. The head section contains the document's meta-information, styles, and scripts to ensure that the web page displays correctly and has the required interactivity.
+
+CODE:
+
 * link rel="stylesheet": references an external CSS style sheet, which determines the appearance and style of the web page.
 
 * script src is fontawesome.com: Icons can be used in pages by referencing Font Awesome's icon library.
 
 * script src is js/questions.js defer and js/quizApp.js defer are two asynchronously loaded external JavaScript files. The first one contain questions and answers Data, the second contain the main logic and interactive behavior of Quiz App.
-
 
 ```
 <body>
@@ -130,11 +131,11 @@ C:\Desktop\GitHub\XiaChen_hw5TH_csi3150_fs2023
 
 </body>
 ```
-
-2.  <div class="start_btn">: A button element that users can click to start or start answering a question.
-    <div class="info_box">: A wrapper containing the rules for answering questions, including a title, a list of rules, and buttons(quit and start).
-    <div class="quiz_box">: The main answering area, including title, timer, question text, answer options, dynamic statistics questions and next question button.
-    <div class="result_box">: Result display area, including crown icon, completion text, user score text and restart/exit button.
+2. The body of this HTML code block contains the key elements of the quiz application page.
+* class is "start_btn": A button element that users can click to start or start answering a question.
+* class is "info_box": A wrapper containing the rules for answering questions, including a title, a list of rules, and buttons(quit and start).
+* class is "quiz_box": The main answering area, including title, timer, question text, answer options, dynamic statistics questions and next question button.
+* class is"result_box": Result display area, including crown icon, completion text, user score text and restart/exit button.
 
 ### <span style="color: blue;">style.css</span>
 
@@ -162,9 +163,13 @@ body {
 }
 ```
 
-2.  \*{...} Reset the margins and padding of all HTML elements to ensure there is no default spacing.
-    Body{...} Set the background color of the page to purple.
-    ::selection{...} This is a pseudo-element selector that allows customizing the color and background color when the user selects text.
+2.  
+CODE:
+* \*{...}: Reset the margins and padding of all HTML elements to ensure there is no default spacing.
+
+* Body{...}: Set the background color of the page to purple.
+
+* ::selection{...}： This is a pseudo-element selector that allows customizing the color and background color when the user selects text.
 
 ```
 .info_box.activeInfo,
@@ -206,7 +211,8 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 
 1. Get HTML elements by querying a specific CSS selector in the document
 
-```// if startQuiz button clicked
+```
+// if startQuiz button clicked
 start_btn.addEventListener("click", (e) => {
   info_box.classList.add("activeInfo"); //show info box
 });
@@ -256,19 +262,20 @@ next_btn.addEventListener("click", (e) => {
 3. This code is used to load the next question when the user clicks the "Next Question" button and also checks if all questions have been answered. If so, clears the counter and counterline to call showResult() function to display the final quiz results.
 
 CODE:
-if (que_count < questions.length - 1) - Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
 
-que_count++; - Increment the question counter to point to the next question.
+* if (que_count < questions.length - 1) - Checks if the question counter is less than the length of the questions array minus one, ensuring that the number of questions is not exceeded.
 
-que_numb++; - Increment the question number value to represent the next question number.
+* que_count++; - Increment the question counter to point to the next question.
 
-showQuetions(que_count); - Call the "showQuetions" function to show the next question (pass the "que_count" parameter here)
+* que_numb++; - Increment the question number value to represent the next question number.
 
-startTimer(timeValue); - Call the "startTimer" function to start timing a new question and set the time to the initial value.
+* showQuetions(que_count); - Call the "showQuetions" function to show the next question (pass the "que_count" parameter here)
 
-startTimerLine(widthValue); - Call the "startTimerLine" function to restart the timeline or progress bar and set the width to the initial value.
+* startTimer(timeValue); - Call the "startTimer" function to start timing a new question and set the time to the initial value.
 
-timeText.textContent = "Time Left"; - Change the content of the time text to "Time Left" to prompt the user for the remaining time.
+* startTimerLine(widthValue); - Call the "startTimerLine" function to restart the timeline or progress bar and set the width to the initial value.
+
+* timeText.textContent = "Time Left"; - Change the content of the time text to "Time Left" to prompt the user for the remaining time.
 
 ```
 function optionSelected(answer) {
@@ -345,13 +352,13 @@ function startTimer(time) {
 
 5. It is used to start a timer, countdown counter to control remaining time in quiz application.
 
-function startTimer(time) - It accepts a parameter time, which represents the initial countdown time.
+* function startTimer(time) - It accepts a parameter time, which represents the initial countdown time.
 
-counter = setInterval(timer, 1000); - This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
+* counter = setInterval(timer, 1000); - This line of code uses the setInterval function to create a timer with an interval of 1000 milliseconds (1 second) and assigns it to a variable named counter. This timer will execute a function named timer every second.
 
-function timer() - This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
+* function timer() - This is an internally defined function called timer that actually does the countdown and updates the display of remaining time.
 
-let addZero = timeCount.textContent; - If the time is less than 9, it will get the current time text.
+* let addZero = timeCount.textContent; - If the time is less than 9, it will get the current time text.
 timeCount.textContent = "0" + addZero; - Then add a "0" before the time to ensure that the displayed time format is two digits.
 
 ```
